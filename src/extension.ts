@@ -1,9 +1,7 @@
 
-
 import * as vscode from 'vscode';
 import { ClassUtil } from './class_util';
 import { FileUtil } from './file_util';
-
 
 
 export function activate(context: vscode.ExtensionContext) {

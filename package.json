@@ -1,6 +1,11 @@
 {
-
-  "name": "widget-file",
+	
+  "name": "widget-file",	
+	"publisher": "Jarkynbek",
+  	"repository": {
+		"type": "git",
+		"url": "https://github.com/Jarkynbekbat/widget-file.git"
+	},
 	"displayName": "widget file",
 	"description": "extracts widget to file",
 	"version": "0.0.1",
