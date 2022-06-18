@@ -3,17 +3,17 @@ extract selected widget class to file
 
 
 ## Features
-run the following command: extract to widget
+1) select hole widget class
+2) run `extract widget to file` command
 
 
 ## Known Issues
-
-cut selected widget class after extracting
+- static folder name: `elements`
 
 ## Release Notes
-extract selected widget class to file
+- extract selected widget class to file 
 
 ### 1.0.0
-- extract selected widget class to file
+- extract selected widget class to file 
 
 

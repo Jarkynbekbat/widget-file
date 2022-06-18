@@ -11,8 +11,9 @@
 		"url": "https://github.com/Jarkynbekbat/widget-file.git"
 	},
 	"displayName": "WidgetFile - Easy widget extracting to file",
-	"description": "Easy flutter widget extracting to file", 
-	"version": "0.0.2",
+	"description": "1) Select hole widget class\n 2) run command: extract widget to file\n 3) enjoy :)\n" , 
+	"version": "0.0.1",
+	"icon": "assets/icon.png", 
 	"engines": {
 		"vscode": "^1.68.0"
 	},
