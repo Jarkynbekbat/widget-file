@@ -4,7 +4,6 @@ import * as vscode from 'vscode';
 
 
 export class FileUtil {
-
           /// create folder at path if not exists
           public static createFolderIfNotExists(path: string): void {
                     if (!fs.existsSync(path)) {

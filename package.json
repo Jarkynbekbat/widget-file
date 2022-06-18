@@ -1,19 +1,29 @@
 {
 	
-  "name": "widget-file",	
+  "name": "widgetfile",	
 	"publisher": "Jarkynbek",
+	"author": {
+		"name": "Jarkynbek Batyrov",
+		"email": "jarkynbekbatdev@gmail.com"
+	},
   	"repository": {
 		"type": "git",
 		"url": "https://github.com/Jarkynbekbat/widget-file.git"
 	},
-	"displayName": "widget file",
-	"description": "extracts widget to file",
+	"displayName": "WidgetFile - Easy widget extracting to file",
+	"description": "Easy flutter widget extracting to file", 
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.68.0"
 	},
 	"categories": [
 		"Other"
+	],
+	"keywords": [
+		"flutter",
+		"dart",
+		"flutter widget",
+		"widget"
 	],
 	"activationEvents": [
         		"onCommand:widget-file.extract",

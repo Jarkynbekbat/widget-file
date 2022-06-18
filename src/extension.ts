@@ -27,8 +27,23 @@ export function activate(context: vscode.ExtensionContext) {
 		const fileName = ClassUtil.camelCaseToSnakeCase(className);
 		const newFilePath = newFolderPath + `/${fileName}.dart`;
 
+		editor?.edit((editBuilder) => {
+			editBuilder.delete(editor.selection);
+		}
+		);
+
+		/// open just created file in editor
+		vscode.workspace.openTextDocument(newFilePath).then((doc) => {
+			vscode.window.showTextDocument(doc);
+		}
+		);
 
 		FileUtil.createFileIfNotExists(newFilePath, selectedText);
+
+
+
+
+
 
 	});
 	context.subscriptions.push(disposable);
