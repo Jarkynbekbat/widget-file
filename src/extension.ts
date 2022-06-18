@@ -4,7 +4,9 @@ import { ClassUtil } from './class_util';
 import { FileUtil } from './file_util';
 
 
+
 export function activate(context: vscode.ExtensionContext) {
+
 	let disposable = vscode.commands.registerCommand('widget-file.extract', async () => {
 		const editor = vscode.window.activeTextEditor;
 		const selectedText = editor?.document.getText(editor.selection).trim();
@@ -27,24 +29,17 @@ export function activate(context: vscode.ExtensionContext) {
 		const fileName = ClassUtil.camelCaseToSnakeCase(className);
 		const newFilePath = newFolderPath + `/${fileName}.dart`;
 
+		FileUtil.createFileIfNotExists(newFilePath, selectedText);
+
 		editor?.edit((editBuilder) => {
 			editBuilder.delete(editor.selection);
 		}
 		);
 
-		/// open just created file in editor
 		vscode.workspace.openTextDocument(newFilePath).then((doc) => {
 			vscode.window.showTextDocument(doc);
 		}
 		);
-
-		FileUtil.createFileIfNotExists(newFilePath, selectedText);
-
-
-
-
-
-
 	});
 	context.subscriptions.push(disposable);
 }
